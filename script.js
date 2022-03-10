@@ -20,6 +20,12 @@ function generatePassword() {
   } else if (enter < 8 || enter > 128) {
     enter = parseInt(prompt("8-128 characters"));
   }
+
+  //PW criteria
+  var confirmUppercase = confirm("Would you like Uppercase letters in your password? Click 'OK' or press the Enter key to confirm, and 'Cancel' to say no.");
+  var confirmLowercase = confirm("Would you like Lowercase letters in your password? Click 'OK' or press the Enter key to confirm, and 'Cancel' to say no.");
+  var confirmNumeric = confirm("Would you like Numbers in your password? Click 'OK' or press the Enter key to confirm, and 'Cancel' to say no.");
+  var confirmSpecialCharacter = confirm("Would you like Special Characters in your password? This includes symbols that some protected sites might not permit. Click 'OK' or press the Enter key to confirm, and 'Cancel' to say no.")
 }
 
 // Get references to the #generate element
