@@ -12,6 +12,15 @@ var Uppercasealpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 var Numeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var SpecialCharacters = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "-", "+", "=", "<", ">", "/", "?", ".", ",", "[", "[", "{", "}", "_"];
 
+function generatePassword() {
+  //PW length
+  enter = parseInt(prompt("Password Length - Must be between 8 to 128"));
+  if (!enter) {
+    alert("Please enter a value to continue");
+  } else if (enter < 8 || enter > 128) {
+    enter = parseInt(prompt("8-128 characters"));
+  }
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
