@@ -38,11 +38,12 @@ function generatePassword() {
     criteria = alert("Please select at least one of the previous criteria (Uppercase, Lowercase, Numbers, or Special Characters) listed to continue.");
   }
 
+  //CONDITIONS (else if statements)
+
   //if all criteria is selected...
   else if (confirmUppercase && confirmLowercase && confirmNumeric && confirmSpecialCharacter) {
     criteria = Uppercasealpha.concat(Lowercasealpha, Numeric, SpecialCharacter);
   }
-
   //if 1 criteria is selected...
   else if (confirmUppercase) {
     criteria = Uppercasealpha;
@@ -56,7 +57,6 @@ function generatePassword() {
   else if (confirmSpecialCharacter) {
     criteria = SpecialCharacter;
   }
-  
   //if 2 criteria are selected...
   //UP+LW, UP+NUM, UP+SP, LW+NUM, LW+SP, NUM+SP
   else if (confirmUppercase && confirmLowercase) {
@@ -77,7 +77,6 @@ function generatePassword() {
   else if (confirmNumeric && confirmSpecialCharacter) {
     criteria = Numeric.concat(SpecialCharacter);
   }
-
   //if 3 criteria are selected...
   //UP+LW+NUM, UP+LW+SP, UP+NUM+SP, LW+NUM+SP
   else if (confirmUppercase && confirmLowercase && confirmNumeric) {
@@ -99,8 +98,11 @@ function generatePassword() {
   for(var i = 0; i < length; i++) {
     var choosencriteria = criteria[Math.floor(Math.random() * criteria.length)];
     password.push(choosencriteria);
+    window.alert(password)
   }
 }
+
+console.log(password);
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
