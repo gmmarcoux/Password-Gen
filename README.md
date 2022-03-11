@@ -4,7 +4,9 @@
 
 This project asked for a Password generator with multiple criteria that must be met. The password must be between 8 to 128 characters in length, deemed by the user. After, the users is presented with 4 different choices to personalize their random password, including uppercase and lowercase letters, numbers, and special characters. 
 
-##Links 
+##Link to working site 
+
+https://gmmarcoux.github.io/Password-Gen/ 
 
 ##Screenshots
 <img width="1177" alt="array" src="https://user-images.githubusercontent.com/98123372/157908185-3e2b62e8-ef7f-4199-8fca-feabfabd760f.png">
