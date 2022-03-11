@@ -1,5 +1,5 @@
 // Add event listener to generate button
-document.querySelector("#generate").addEventListener("click", writePassword);
+
 
 
 // Assignment code her
